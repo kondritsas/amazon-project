@@ -73,11 +73,17 @@ products.forEach((product) => {
                 quantity: 1
                });
            }
-           console.log(cart);
+
+           let cartCounter = 0;
+
+           cart.forEach((item) => {
+            cartCounter += item.quantity;
+           })
+
+          document.querySelector(".js-cart-quantity").innerHTML = cartCounter;
+           
         });
 
     });
-
-
-})
+});
 
