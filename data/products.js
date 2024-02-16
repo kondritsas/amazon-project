@@ -5,7 +5,7 @@ const products = [
     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
     rating: {
       stars: 4.5,
-      count: 87
+      count: 88
     },
     priceCents: 1090,
     keywords: [
