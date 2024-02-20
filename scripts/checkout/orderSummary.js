@@ -7,7 +7,7 @@ import { renderPaymentSummary } from './paymentSummary.js';
 
 // quantity number in checkout page
 
-function updateCartQuantityCheckout(){
+export function updateCartQuantityCheckout(){
     let cartCounter = 0;
 
        cart.forEach((item) => {
@@ -16,6 +16,8 @@ function updateCartQuantityCheckout(){
 
       document.querySelector(".checkout-header-middle-section").innerHTML = `Checkout (<a class="return-to-home-link"
       href="amazon.html">${cartCounter} items</a>)`;
+
+      return cartCounter;
 }
 
 // create HTML for the cart 
